@@ -19,7 +19,7 @@ const featureData = [
   },
   {
     id: 3,
-    icon: "/images/features/receipt.png",
+    icon: "/images/features/recept.png",
     title: "Receipt Attachment with Real-Time Camera and Pre-Captured Image Upload ",
     text: "Travel expense management solution allows real-time receipt attachment via mobile device camera or pre-captured receipts. This eliminates the need for manual data entry, saving time and reducing the risk of errors.",
     backgroundColor: "#F7EDFF",
