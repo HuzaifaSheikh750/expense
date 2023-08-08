@@ -45,7 +45,7 @@ const Hero1 = () => {
                <HeroBtnGroup />
           </div>
           <div className="col-xl-6 col-lg-6 col-md-12  text-center mainexpense" data-aos="fade-up">
-           <img src="/images/hero.png" alt="hero" className="img-fluid" style={{marginTop:"-50px", marginLeft:"50px"}} />
+           <img src="/images/mobileScreen.png" alt="hero" className="img-fluid" style={{marginTop:"-50px", marginLeft:"50px"}} />
           </div>
          
         </div>

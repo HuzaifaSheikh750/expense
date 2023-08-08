@@ -68,7 +68,7 @@
         <div className="col-lg-6 wow fadeInRight">
           <div className="illustration-holder position-relative pt-50 pb-50 pe-md-5 lg-mt-80">
             <img
-              src="images/final_image_3.png"
+              src="images/halfMobile.png"
               alt=""
               className="lazy-img main-img ms-auto"
             />

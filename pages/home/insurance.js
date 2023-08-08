@@ -303,7 +303,7 @@ const Insurance = () => {
                 <div className="row align-items-center" style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
                   <h2 style={{textAlign:"center"}}>Get it from Microsoft AppSource</h2>
                   <a href="https://appsource.microsoft.com/en-us/product/dynamics-365/kaispellc.kspteapp-am?tab=Overview" target="_blank" style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
-                  <img src="/images/Microsoft_button.png" alt="shape" className="lazy-img icon img-fluid" style={{width:"200px", height:"55px", marginTop:"20px"}}/>
+                  <img src="/images/micBtn.png" alt="shape" className="lazy-img icon img-fluid" style={{width:"200px", height:"55px", marginTop:"20px"}}/>
                   </a>
                 </div>                                              
               </div>
@@ -336,7 +336,8 @@ const Insurance = () => {
             {/* /.row */}
             <div className="text-center xs-mt-40">
               <Link
-                href="/blog/blog-v2"
+                href="https://www.kaispe.com/resources/blogs/"
+                target="_blank"
                 className="btn-twentyTwo fw-500 tran3s"
                 data-aos="fade-left"
               >
