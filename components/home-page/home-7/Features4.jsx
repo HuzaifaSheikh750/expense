@@ -93,7 +93,7 @@ const Features = () => {
       {featureData.map((feature) => (
         <div
           key={feature.id}
-          className="col-lg-4 col-md-6"
+          className="col-lg-4 col-md-6 col-sm-6 col-xs-12"
           data-aos="fade-up"
           data-aos-delay={feature.id * 100}
         >

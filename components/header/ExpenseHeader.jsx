@@ -1,30 +1,30 @@
-"use client"
 import { useEffect, useState } from "react";
-import MainMenu from "./MainMenu";
+import MainMenu from "../header/MainMenu2";
 import Link from "next/link";
 import Image from "next/image";
 
-const DefaulHeader = () => {
+const ExpenseHeader = () => {
   const [navbar, setNavbar] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
 
-  
-  // const [scrolling, setScrolling] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
 
-  // useEffect(() => {
-  //     const handleScroll = () => {
-  //       if (window.scrollY > 0) {
-  //         setScrolling(true);
-  //       } else {
-  //         setScrolling(false);
-  //       }
-  //     };
-  
-  //     window.addEventListener('scroll', handleScroll);
-  //     return () => {
-  //       window.removeEventListener('scroll', handleScroll);
-  //     };
-  //   }, []);
-  //   const logoSource = scrolling ? '/images/logo_black.png' : '/images/logo_white.png';
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const logoSource = scrolling ? '/images/logo_black.png' : '/images/Expense_Logo.png';
 
   const changeBackground = () => {
     if (window.scrollY >= 10) {
@@ -43,38 +43,32 @@ const DefaulHeader = () => {
 
   return (
     <header
-      className={`theme-main-menu sticky-menu theme-menu-eight  border-bottom ${
+      className={`theme-main-menu sticky-menu theme-menu-two border-bottom ${
         navbar ? "fixed" : ""
       }`}
-     
     >
       <div className="inner-content position-relative">
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo order-lg-0">
             <Link href="/" className="d-block">
               <Image
-                src="/images/logo_black.png"
+                src={logoSource}
                 alt="logo"
                 width={180}
                 height={50}
               />
             </Link>
           </div>
-          <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
-            {/* <Link
-              href="/login"
-              className="login-btn-three rounded-circle tran3s me-3"
-            >
-              <i className="bi bi-person" />
-            </Link> */}
+          <div className="right-widget ms-auto d-flex align-items-center order-lg-3" >
             <Link
               href="https://kspcs.powerappsportals.com/customer-landing/"
               target="_blank"
-              className="btn-twentyOne fw-500 tran3s d-none d-lg-block"
+              className="contact-btn-two fs-17 fw-500 tran3s d-none d-lg-block"
+              // style={{backgroundColor:"white", color:"black", borderColor:"white" }}
             >
               Support Portal
             </Link>
-          </div>{" "}
+          </div>
           {/* /.right-widget */}
           <MainMenu />
         </div>
@@ -84,4 +78,4 @@ const DefaulHeader = () => {
   );
 };
 
-export default DefaulHeader;
+export default ExpenseHeader;

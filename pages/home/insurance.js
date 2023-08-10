@@ -117,7 +117,7 @@ const Insurance = () => {
               <Feature />
             </div>
             <div className="text-center md-mt-50">
-                <button className="btn btn-primary" style={{backgroundColor:"#11213E",borderColor:"#11213E",color:"#fff",borderRadius:"50px",padding:"10px 30px", marginTop:"50px"}}>
+                <button className="btn btn-primary" style={{backgroundColor:"#11213E",borderColor:"#11213E",color:"#fff",borderRadius:"50px",padding:"15px 30px", marginTop:"50px"}}>
                   {/* <a href="/Features">View All Features</a> */}
                   <Link
                       href="/Features"
@@ -300,12 +300,14 @@ const Insurance = () => {
       >
         <div className="container">
             <div className="row">
-                <div className="row align-items-center" style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
-                  <h2 style={{textAlign:"center"}}>Get it from Microsoft AppSource</h2>
-                  <a href="https://appsource.microsoft.com/en-us/product/dynamics-365/kaispellc.kspteapp-am?tab=Overview" target="_blank" style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
-                  <img src="/images/micBtn.png" alt="shape" className="lazy-img icon img-fluid" style={{width:"200px", height:"55px", marginTop:"20px"}}/>
+                <div className="col-xl-7 col-lg-7 col-md-7 col-sm-12 align-items-center" >
+                  <h2 style={{textAlign:"start"}}>Get it from Microsoft <span style={{}}> AppSource </span></h2>
+                </div> 
+                <div className="col-xl-5   col-lg-5 col-md-5 col-sm-12">
+                  <a href="https://appsource.microsoft.com/en-us/product/dynamics-365/kaispellc.kspteapp-am?tab=Overview" target="_blank" style={{display:"flex", alignItems:"center", justifyContent:"center", marginTop:"10px"}}>
+                  <img src="/images/appSource.png" alt="shape" className="lazy-img icon img-fluid" />
                   </a>
-                </div>                                              
+                </div>                                     
               </div>
         </div>
       </div>
@@ -408,7 +410,7 @@ const Insurance = () => {
               <div className="col-lg-4 footer-intro mb-40">
                 <div className="logo">
                   <Link href="/">
-                    <img src="/images/Expense_Logo.png" alt="logo" width={140} />
+                    <img src="/images/logo_white.png" alt="logo" width={140} />
                   </Link>
                 </div>
                 <p className="text-white opacity-75 fs-18 mt-15 mb-45 lg-mb-10">
@@ -424,13 +426,15 @@ const Insurance = () => {
                 <div className="logo">
                   <h5 className="footer-title text-white fw-500">Email Address</h5>
                 </div>
+                
                 <p className="text-white opacity-75 fs-18 mt-15 mb-45 lg-mb-10">
-                info@kaispe.com
+                <i className="fas fa-envelope text-white" style={{marginRight:"15px"}}></i>  info@kaispe.com
                 </p>
                 <h5 className="footer-title text-white fw-500">Contact Number</h5>
+            
                 <p className="text-white opacity-75 fs-18 mt-15 mb-45 lg-mb-10">
-                     USA : (+1)-315-791-4472 <br></br>
-                     PAK : (+92)-213-432-6085
+                <i className="fas fa-phone-alt text-white" style={{marginRight:"15px"}}></i> USA : (+1)-315-791-4472 <br></br>
+                <i className="fas fa-phone-alt text-white" style={{marginRight:"15px"}}></i>   PAK : (+92)-213-432-6085
                 </p>
               
               </div>

@@ -10,11 +10,30 @@ import {
   isActiveParent,
   isActiveParentChaild,
 } from "../../utils/linkActiveChecker";
-
+import React, { useState, useEffect } from 'react';
 import { useRouter } from "next/router";
 
 const MainMenu = () => {
   const router = useRouter();
+
+  // const [scrolling, setScrolling] = useState(false);
+
+  // useEffect(() => {
+  //     const handleScroll = () => {
+  //       if (window.scrollY > 0) {
+  //         setScrolling(true);
+  //       } else {
+  //         setScrolling(false);
+  //       }
+  //     };
+  
+  //     window.addEventListener('scroll', handleScroll);
+  //     return () => {
+  //       window.removeEventListener('scroll', handleScroll);
+  //     };
+  //   }, []);
+  //   const textColor = scrolling ? 'black' : 'white';
+
   return (
     <nav className="navbar navbar-expand-lg order-lg-2">
       <button

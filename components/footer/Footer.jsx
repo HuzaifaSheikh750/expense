@@ -67,9 +67,11 @@ const Footer = () => {
 
       <div className="col-xl-3 col-lg-4 col-md-5 mb-30">
         <h5 className="footer-title text-white fw-500">Address</h5>
+       
         <p className="text-white opacity-75 mb-35">
-        590 Madison Avenue 21st Floor Manhattan, NY 10022 USA.<br/><br/>
-        Suite#213 Sumya Business Avenue MACHS Karachi, Pakistan.
+        <i className="fas fa-map-marker-alt text-white fs-20 " style={{marginRight:"15px"}} />590 Madison Avenue 21st Floor Manhattan, NY 10022 USA.<br/><br/>
+        <i className="fas fa-map-marker-alt text-white fs-20 " style={{marginRight:"15px"}} /> 415 W. Golf Rd Suite 55-K (607 SF) Arlington Heights, IL 60005.<br/><br/>
+        <i className="fas fa-map-marker-alt text-white fs-20 " style={{marginRight:"15px"}} />Suite#213 Sumya Business Avenue MACHS Karachi, Pakistan.
         </p>
         
         <ul className="d-flex social-icon style-none">

@@ -10,7 +10,7 @@ const Feature = () => {
         </>
       ),
       description: "100% Reliable",
-      icon: "images/icon/icon_100.svg",
+      icon: "/images/pieChart.gif", 
       width: "169",
       height: "165",
       delay: "100",
@@ -22,10 +22,10 @@ const Feature = () => {
          Flexible Expense Category Configuration for Itemized Reporting   
         </>
       ),
-      width: "202",
+      width: "180",
       height: "170",
       description: "Claim Support",
-      icon: "images/icon/icon_101.svg",
+      icon: "/images/setting.gif",
       delay: "200",
     },
     {
@@ -38,7 +38,7 @@ const Feature = () => {
       width: "175",
       height: "175",
       description: "Consultation",
-      icon: "images/icon/icon_102.svg",
+      icon: "/images/exchange.gif",
       delay: "300",
     },
   ];

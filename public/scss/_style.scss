@@ -7115,6 +7115,7 @@ body .btn-twentyFive:hover {
 /*^^^^^^^^^^^^^^^^^^^^^ Fancy Short Banner Thirteen ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .fancy-short-banner-thirteen {
   background: #f6f9fb;
+  // background: #12153C;
 }
 .fancy-short-banner-thirteen .bg-wrapper {
   border-radius: 10px;
@@ -8574,8 +8575,8 @@ body .btn-twentyFive:hover {
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Fancy Short Banner Fifteen ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .fancy-short-banner-fifteen {
-  background: url(../images/tag_image.png) no-repeat center;
-  background-size: cover;
+  // background: url(../images/media/img_85.jpg) no-repeat center;
+  // background-size: cover;
 }
 .fancy-short-banner-fifteen:before {
   content: "";
@@ -9835,6 +9836,14 @@ body .btn-twentyFive:hover {
   // height: 50vh;
   // border-radius: "60px"
 }
+
+.tag_image{
+background-image: url(../images/tag_image.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-size: 100% 100% ;
+}
+
 .back{
   background-image: url(../images/footer_Image.png); 
   background-size: cover;
@@ -9851,6 +9860,13 @@ body .btn-twentyFive:hover {
 }
 .pricebtn{
   margin-top: 170px;
+}
+.expensefeature{
+  background-image: url(../images/features.png);
+  // background-size: cover;
+  background-repeat: no-repeat;
+  // background-position: center center;
+  background-size: 100% 30%;
 }
 
 // @media  screen and (max-width: 1200px) {

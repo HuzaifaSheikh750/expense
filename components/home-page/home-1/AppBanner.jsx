@@ -13,7 +13,7 @@
     const buttons = [
       {
         // platform: "Google play",
-        icon: "images/download.png",
+        icon: "images/download.jpg",
         className: "windows-button",
       },
       // {

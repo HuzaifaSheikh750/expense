@@ -27,11 +27,14 @@ const DefaultFooter = () => {
                 <div className="logo">
                   <h5 className="footer-title  fw-500" style={{color:"black"}} >Email Address</h5>
                 </div>
-                <p className=" opacity-75 fs-18 mt-15 mb-45 lg-mb-10">info@kaispe.com </p>
+                
+                <p className=" opacity-75 fs-18 mt-15 mb-45 lg-mb-10"><i className="fa fa-envelope" style={{color:"black", marginRight:"15px"}}></i>info@kaispe.com </p>
+           
                 <h5 className="footer-title  fw-500" style={{color:"black"}}>Contact Number</h5>
+                
                 <p className=" opacity-75 fs-18 mt-15 mb-45 lg-mb-10">
-                     USA : (+1)-315-791-4472 <br />
-                     PAK : (+92)-213-432-6085
+                <i className="fa fa-phone" style={{color:"black", marginRight:"15px"}}></i>   USA : (+1)-315-791-4472 <br />
+                <i className="fa fa-phone" style={{color:"black", marginRight:"15px"}}></i>   PAK : (+92)-213-432-6085
                 </p>
               
             </div>
@@ -41,11 +44,14 @@ const DefaultFooter = () => {
             <div className="col-xl-4 col-lg-4 mb-30 form-widget">
               <h5 className="footer-title tx-dark fw-500" style={{color:"black"}}>Our Address</h5>
               <p className=" opacity-75 fs-18 mt-15 mb-45 lg-mb-10">
-              590 Madison Avenue 21st Floor Manhattan, NY 10022 USA. 
+              <i className="fa solid fa-location-dot" style={{color:"black", marginRight:"15px"}}></i> 590 Madison Avenue 21st Floor Manhattan, NY 10022 USA. 
+              </p>
+              <p className=" opacity-75 fs-18 mt-15 mb-45 lg-mb-10">
+              <i className="fa solid fa-location-dot" style={{color:"black", marginRight:"15px"}}></i> 415 W. Golf Rd Suite 55-K (607 SF) Arlington Heights, IL 60005. 
               </p>
               <p className=" opacity-75 fs-18 mt-0 mb-45 lg-mb-10">
-              Suite#213 Sumya Business Avenue MACHS Karachi, Pakistan.
-                </p>
+              <i className="fa solid fa-location-dot" style={{color:"black", marginRight:"15px"}}></i>Suite#213 Sumya Business Avenue MACHS Karachi, Pakistan.
+              </p>
             </div>
             {/* End .col-xl-4 */}
           </div>
