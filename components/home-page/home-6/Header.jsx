@@ -24,7 +24,7 @@ const Header = () => {
     };
   }, []);
 
-  const logoSource = scrolling ? '/images/logo_black.png' : '/images/Expense_Logo.png';
+  const logoSource = scrolling ? '/images/logo_black.png' : '/images/logo_white.png';
 
   const changeBackground = () => {
     if (window.scrollY >= 10) {
